@@ -34,22 +34,20 @@
                 </div>
                 <div class="social-links">
                     <a href="https://www.faceit.com/en/players/asimolpiq" target="_blank" class="social-btn faceit">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M12 2L2 7v10l10 5 10-5V7l-10-5zm0 2.18L19.82 8 12 11.82 4.18 8 12 4.18zM4 9.82l7 3.5v7.36l-7-3.5V9.82zm16 0v7.36l-7 3.5v-7.36l7-3.5z"/>
-                        </svg>
+                        <img src="images/faceit.svg" alt="FACEIT" class="platform-logo">
                         FACEIT
                     </a>
+                    <a href="https://steamcommunity.com/id/alpiiq/" target="_blank" class="social-btn steam">
+                        <img src="images/steam.png" alt="Steam" class="platform-logo">
+                        STEAM
+                    </a>
                     <a href="https://kick.com/asimolpiq" target="_blank" class="social-btn kick">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5v-9l6 4.5-6 4.5z"/>
-                        </svg>
+                        <img src="images/kick.png" alt="Kick" class="platform-logo">
                         KICK
                     </a>
-                    <a href="https://specs.gg/asimolpiq" target="_blank" class="social-btn specs">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
-                        </svg>
-                        SPECS.GG
+                    <a href="https://youtube.com/@alpayguroglu3824" target="_blank" class="social-btn youtube">
+                        <img src="images/youtube.png" alt="YouTube" class="platform-logo">
+                        YOUTUBE
                     </a>
                 </div>
             </div>
@@ -63,152 +61,247 @@
             <h2 class="section-title">PRO SETTINGS</h2>
             
             <div class="settings-grid">
-                <!-- Mouse Settings -->
-                <div class="settings-card">
-                    <div class="card-header">
-                        <h3>🖱️ MOUSE</h3>
-                    </div>
-                    <div class="card-content">
-                        <div class="setting-row">
-                            <span class="setting-label">DPI</span>
-                            <span class="setting-value">400</span>
-                        </div>
-                        <div class="setting-row">
-                            <span class="setting-label">Hassasiyet</span>
-                            <span class="setting-value">2.10</span>
-                        </div>
-                        <div class="setting-row">
-                            <span class="setting-label">eDPI</span>
-                            <span class="setting-value highlight">840</span>
-                        </div>
-                        <div class="setting-row">
-                            <span class="setting-label">Anket Oranı</span>
-                            <span class="setting-value">1000Hz</span>
-                        </div>
-                        <div class="setting-row">
-                            <span class="setting-label">Zoom Hassasiyeti</span>
-                            <span class="setting-value">1.05</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Crosshair Settings -->
-                <div class="settings-card">
-                    <div class="card-header">
-                        <h3>🎯 CROSSHAIR</h3>
-                    </div>
-                    <div class="card-content">
-                        <div class="crosshair-preview">
-                            <div class="crosshair" style="
-                                width: 1px;
-                                height: 20px;
-                                background: cyan;
-                                position: relative;
-                            ">
-                                <div style="
-                                    position: absolute;
-                                    width: 20px;
-                                    height: 1px;
-                                    background: cyan;
-                                    top: 50%;
-                                    left: 50%;
-                                    transform: translate(-50%, -50%);
-                                "></div>
+                <!-- Single Unified Settings Card -->
+                <div class="settings-card-unified">
+                    <div class="settings-columns">
+                        <!-- Mouse Column -->
+                        <div class="settings-column">
+                            <div class="card-header">
+                                <h3>🖱️ MOUSE</h3>
+                            </div>
+                            <div class="card-content">
+                                <div class="setting-row">
+                                    <span class="setting-label">DPI</span>
+                                    <span class="setting-value">400</span>
+                                </div>
+                                <div class="setting-row">
+                                    <span class="setting-label">Hassasiyet</span>
+                                    <span class="setting-value">2.10</span>
+                                </div>
+                                <div class="setting-row">
+                                    <span class="setting-label">eDPI</span>
+                                    <span class="setting-value highlight">840</span>
+                                </div>
+                                <div class="setting-row">
+                                    <span class="setting-label">Anket Oranı</span>
+                                    <span class="setting-value">1000Hz</span>
+                                </div>
+                                <div class="setting-row">
+                                    <span class="setting-label">Zoom Hassasiyeti</span>
+                                    <span class="setting-value">1.05</span>
+                                </div>
                             </div>
                         </div>
-                        <div class="setting-row">
-                            <span class="setting-label">Renk</span>
-                            <span class="setting-value" style="color: cyan;">Cyan</span>
+
+                        <!-- Video Column -->
+                        <div class="settings-column">
+                            <div class="card-header">
+                                <h3>🖥️ VIDEO</h3>
+                            </div>
+                            <div class="card-content">
+                                <div class="setting-row">
+                                    <span class="setting-label">Çözünürlük</span>
+                                    <span class="setting-value">1440x1080</span>
+                                </div>
+                                <div class="setting-row">
+                                    <span class="setting-label">Oran</span>
+                                    <span class="setting-value">4:3</span>
+                                </div>
+                                <div class="setting-row">
+                                    <span class="setting-label">Yenileme Hızı</span>
+                                    <span class="setting-value">180Hz</span>
+                                </div>
+                                <div class="setting-row">
+                                    <span class="setting-label">Parlaklık</span>
+                                    <span class="setting-value">105%</span>
+                                </div>
+                                <div class="setting-row">
+                                    <span class="setting-label">NVIDIA Reflex</span>
+                                    <span class="setting-value highlight">Açık + Artırma</span>
+                                </div>
+                            </div>
                         </div>
-                        <div class="setting-row">
-                            <span class="setting-label">Stil</span>
-                            <span class="setting-value">Klasik Statik</span>
+                    </div>
+
+                    <!-- Crosshair Section (Full Width) -->
+                    <div class="settings-section">
+                        <div class="card-header">
+                            <h3>🎯 CROSSHAIR</h3>
                         </div>
-                        <div class="setting-row">
-                            <span class="setting-label">Uzunluk</span>
-                            <span class="setting-value">1</span>
+                        <div class="card-content">
+                            <div class="crosshair-details">
+                                <div class="crosshair-preview">
+                                    <div class="crosshair" style="
+                                        width: 1px;
+                                        height: 20px;
+                                        background: cyan;
+                                        position: relative;
+                                    ">
+                                        <div style="
+                                            position: absolute;
+                                            width: 20px;
+                                            height: 1px;
+                                            background: cyan;
+                                            top: 50%;
+                                            left: 50%;
+                                            transform: translate(-50%, -50%);
+                                        "></div>
+                                    </div>
+                                </div>
+                                <div class="crosshair-specs">
+                                    <div class="setting-row">
+                                        <span class="setting-label">Renk</span>
+                                        <span class="setting-value" style="color: cyan;">Cyan</span>
+                                    </div>
+                                    <div class="setting-row">
+                                        <span class="setting-label">Stil</span>
+                                        <span class="setting-value">Klasik Statik</span>
+                                    </div>
+                                    <div class="setting-row">
+                                        <span class="setting-label">Uzunluk</span>
+                                        <span class="setting-value">1</span>
+                                    </div>
+                                    <div class="setting-row">
+                                        <span class="setting-label">Kalınlık</span>
+                                        <span class="setting-value">0.1</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="code-box">
+                                <code>CSGO-hD97Q-asVUL-WykRH-HDdjt-bJzMM</code>
+                                <button class="copy-btn" onclick="copyToClipboard('CSGO-hD97Q-asVUL-WykRH-HDdjt-bJzMM')">📋</button>
+                            </div>
                         </div>
-                        <div class="setting-row">
-                            <span class="setting-label">Kalınlık</span>
-                            <span class="setting-value">0.1</span>
+                    </div>
+
+                    <!-- Viewmodel Section (Full Width) -->
+                    <div class="settings-section">
+                        <div class="card-header">
+                            <h3>👁️ VIEWMODEL</h3>
                         </div>
-                        <div class="code-box">
-                            <code>CSGO-hD97Q-asVUL-WykRH-HDdjt-bJzMM</code>
-                            <button class="copy-btn" onclick="copyToClipboard('CSGO-hD97Q-asVUL-WykRH-HDdjt-bJzMM')">📋</button>
+                        <div class="card-content">
+                            <div class="viewmodel-settings">
+                                <div class="setting-row">
+                                    <span class="setting-label">FOV</span>
+                                    <span class="setting-value">68</span>
+                                </div>
+                                <div class="setting-row">
+                                    <span class="setting-label">Offset X</span>
+                                    <span class="setting-value">-2</span>
+                                </div>
+                                <div class="setting-row">
+                                    <span class="setting-label">Offset Y</span>
+                                    <span class="setting-value">-1</span>
+                                </div>
+                                <div class="setting-row">
+                                    <span class="setting-label">Offset Z</span>
+                                    <span class="setting-value">-2</span>
+                                </div>
+                            </div>
+                            <div class="code-box">
+                                <code>viewmodel_fov 68;viewmodel_offset_x -2;viewmodel_offset_y -1;viewmodel_offset_z -2;</code>
+                                <button class="copy-btn" onclick="copyToClipboard('viewmodel_fov 68;viewmodel_offset_x -2;viewmodel_offset_y -1;viewmodel_offset_z -2;')">📋</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Launch Options (Full Width) -->
+                    <div class="settings-section">
+                        <div class="card-header">
+                            <h3>⚙️ LAUNCH OPTIONS</h3>
+                        </div>
+                        <div class="card-content">
+                            <div class="code-box">
+                                <code>-allow_third_party_software -high -softparticlesdefaultoff +mat_disable_fancy_blending +r_drawparticles 0</code>
+                                <button class="copy-btn" onclick="copyToClipboard('-allow_third_party_software -high -softparticlesdefaultoff +mat_disable_fancy_blending +r_drawparticles 0')">📋</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PC Specs Section -->
+    <section class="specs">
+        <div class="container">
+            <h2 class="section-title">SETUP & GEAR</h2>
+            
+            <div class="specs-grid">
+                <!-- PC Build -->
+                <div class="specs-card">
+                    <div class="card-header">
+                        <h3>💻 PC BUILD</h3>
+                    </div>
+                    <div class="card-content">
+                        <div class="spec-row">
+                            <span class="spec-label">CPU</span>
+                            <span class="spec-value">AMD Ryzen 7 5700X</span>
+                        </div>
+                        <div class="spec-row">
+                            <span class="spec-label">GPU</span>
+                            <span class="spec-value">ASUS RTX 4060 8GB</span>
+                        </div>
+                        <div class="spec-row">
+                            <span class="spec-label">RAM</span>
+                            <span class="spec-value">Kingston BEAST RGB 32GB</span>
+                        </div>
+                        <div class="spec-row">
+                            <span class="spec-label">Monitor</span>
+                            <span class="spec-value">ASUS TUF VG279Q3A 180Hz</span>
                         </div>
                     </div>
                 </div>
 
-                <!-- Video Settings -->
-                <div class="settings-card">
+                <!-- Peripherals -->
+                <div class="specs-card">
                     <div class="card-header">
-                        <h3>🖥️ VIDEO</h3>
+                        <h3>🎮 PERIPHERALS</h3>
                     </div>
                     <div class="card-content">
-                        <div class="setting-row">
-                            <span class="setting-label">Çözünürlük</span>
-                            <span class="setting-value">1440x1080</span>
+                        <div class="spec-row">
+                            <span class="spec-label">Mouse</span>
+                            <span class="spec-value highlight">Logitech G Pro X Superlight 2 Magenta</span>
                         </div>
-                        <div class="setting-row">
-                            <span class="setting-label">Oran</span>
-                            <span class="setting-value">4:3</span>
+                        <div class="spec-row">
+                            <span class="spec-label">Keyboard</span>
+                            <span class="spec-value">HAVIT Gamenote KB884L</span>
                         </div>
-                        <div class="setting-row">
-                            <span class="setting-label">Yenileme Hızı</span>
-                            <span class="setting-value">180Hz</span>
+                        <div class="spec-row">
+                            <span class="spec-label">Headset</span>
+                            <span class="spec-value">Logitech G733 Wireless</span>
                         </div>
-                        <div class="setting-row">
-                            <span class="setting-label">Parlaklık</span>
-                            <span class="setting-value">105%</span>
-                        </div>
-                        <div class="setting-row">
-                            <span class="setting-label">NVIDIA Reflex</span>
-                            <span class="setting-value highlight">Açık + Artırma</span>
+                        <div class="spec-row">
+                            <span class="spec-label">Mousepad</span>
+                            <span class="spec-value">SteelSeries QcK Heavy Large</span>
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
+    </section>
 
-                <!-- Viewmodel Settings -->
-                <div class="settings-card">
-                    <div class="card-header">
-                        <h3>👁️ VIEWMODEL</h3>
-                    </div>
-                    <div class="card-content">
-                        <div class="setting-row">
-                            <span class="setting-label">FOV</span>
-                            <span class="setting-value">68</span>
-                        </div>
-                        <div class="setting-row">
-                            <span class="setting-label">Offset X</span>
-                            <span class="setting-value">-2</span>
-                        </div>
-                        <div class="setting-row">
-                            <span class="setting-label">Offset Y</span>
-                            <span class="setting-value">-1</span>
-                        </div>
-                        <div class="setting-row">
-                            <span class="setting-label">Offset Z</span>
-                            <span class="setting-value">-2</span>
-                        </div>
-                        <div class="code-box">
-                            <code>viewmodel_fov 68;viewmodel_offset_x -2;viewmodel_offset_y -1;viewmodel_offset_z -2;</code>
-                            <button class="copy-btn" onclick="copyToClipboard('viewmodel_fov 68;viewmodel_offset_x -2;viewmodel_offset_y -1;viewmodel_offset_z -2;')">📋</button>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Launch Options -->
-                <div class="settings-card wide">
-                    <div class="card-header">
-                        <h3>⚙️ LAUNCH OPTIONS</h3>
-                    </div>
-                    <div class="card-content">
-                        <div class="code-box">
-                            <code>-allow_third_party_software -high -softparticlesdefaultoff +mat_disable_fancy_blending +r_drawparticles 0</code>
-                            <button class="copy-btn" onclick="copyToClipboard('-allow_third_party_software -high -softparticlesdefaultoff +mat_disable_fancy_blending +r_drawparticles 0')">📋</button>
-                        </div>
-                    </div>
-                </div>
+    <!-- Kick Embed Section -->
+    <section class="stream">
+        <div class="container">
+            <h2 class="section-title">WATCH LIVE</h2>
+            <div class="stream-wrapper">
+                <iframe 
+                    src="https://player.kick.com/asimolpiq" 
+                    height="480" 
+                    width="100%" 
+                    frameborder="0" 
+                    scrolling="no" 
+                    allowfullscreen="true">
+                </iframe>
+            </div>
+            <div class="kick-cta-wrapper">
+                <a href="https://kick.com/asimolpiq" target="_blank" class="kick-cta">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5v-9l6 4.5-6 4.5z"/>
+                    </svg>
+                    Follow on Kick
+                </a>
             </div>
         </div>
     </section>

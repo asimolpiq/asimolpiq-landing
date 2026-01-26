@@ -170,47 +170,49 @@ body {
     display: flex;
     align-items: center;
     gap: 0.5rem;
-    padding: 1rem 2rem;
+    padding: 0.75rem 1.5rem;
     background: var(--card-bg);
     border: 2px solid var(--primary);
     color: var(--text);
     text-decoration: none;
     font-weight: 600;
-    font-size: 1rem;
-    letter-spacing: 0.1em;
+    font-size: 0.9rem;
+    border-radius: 50px;
     transition: all 0.3s ease;
-    position: relative;
-    overflow: hidden;
-}
-
-.social-btn::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(0, 255, 136, 0.3), transparent);
-    transition: left 0.5s ease;
-}
-
-.social-btn:hover::before {
-    left: 100%;
+    backdrop-filter: blur(10px);
 }
 
 .social-btn:hover {
-    border-color: var(--secondary);
     transform: translateY(-2px);
-    box-shadow: 0 10px 30px rgba(0, 255, 136, 0.3);
+    box-shadow: 0 4px 20px rgba(0, 255, 136, 0.4);
+    border-color: var(--secondary);
+}
+
+.social-btn svg {
+    width: 20px;
+    height: 20px;
+}
+
+.platform-logo {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
 }
 
 .social-btn.kick {
     border-color: #53fc18;
 }
 
-.social-btn.kick:hover {
-    border-color: #53fc18;
-    box-shadow: 0 10px 30px rgba(83, 252, 24, 0.3);
+.social-btn.steam {
+    border-color: var(--primary);
+}
+
+.social-btn.youtube {
+    border-color: var(--primary);
+}
+
+.social-btn.faceit {
+    border-color: var(--primary);
 }
 
 /* Settings Section */
@@ -229,9 +231,40 @@ body {
 }
 
 .settings-grid {
+    display: flex;
+    justify-content: center;
+}
+
+/* Unified Settings Card */
+.settings-card-unified {
+    width: 100%;
+    max-width: 1200px;
+    background: var(--card-bg);
+    border: 1px solid rgba(0, 255, 136, 0.2);
+    border-radius: 16px;
+    backdrop-filter: blur(10px);
+    overflow: hidden;
+    padding: 2rem;
+}
+
+.settings-columns {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: 1fr 1fr;
     gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.settings-column {
+    border: 1px solid rgba(0, 255, 136, 0.1);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.settings-section {
+    margin-top: 2rem;
+    border: 1px solid rgba(0, 255, 136, 0.1);
+    border-radius: 12px;
+    overflow: hidden;
 }
 
 .settings-card {
@@ -254,6 +287,7 @@ body {
 .card-header {
     padding: 1.5rem;
     border-bottom: 1px solid rgba(0, 255, 136, 0.2);
+    background: rgba(0, 0, 0, 0.3);
 }
 
 .card-header h3 {
@@ -300,10 +334,59 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100px;
+    min-height: 120px;
     background: rgba(0, 0, 0, 0.5);
-    margin-bottom: 1rem;
     border: 1px solid rgba(0, 255, 136, 0.1);
+    border-radius: 8px;
+    flex: 0 0 200px;
+}
+
+.crosshair-details {
+    display: flex;
+    gap: 2rem;
+    align-items: stretch;
+    margin-bottom: 1rem;
+}
+
+.crosshair-specs {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.crosshair-specs .setting-row {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    padding: 0.75rem 0;
+}
+
+.crosshair-specs .setting-row:last-child {
+    border-bottom: none;
+}
+
+.viewmodel-settings {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.viewmodel-settings .setting-row {
+    border: none;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0.5rem;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+}
+
+.viewmodel-settings .setting-label {
+    font-size: 0.85rem;
+    margin-bottom: 0.25rem;
+}
+
+.viewmodel-settings .setting-value {
+    font-size: 1.2rem;
 }
 
 /* Code Box */
@@ -363,6 +446,111 @@ footer p {
     color: var(--secondary);
 }
 
+/* PC Specs Section */
+.specs {
+    padding: 6rem 0;
+    background: var(--dark);
+}
+
+.specs-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.specs-card {
+    background: var(--card-bg);
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.specs-card:hover {
+    border-color: var(--primary);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 40px rgba(0, 255, 136, 0.2);
+}
+
+.spec-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.spec-row:last-child {
+    border-bottom: none;
+}
+
+.spec-label {
+    color: var(--text-dim);
+    font-weight: 500;
+    font-size: 0.95rem;
+}
+
+.spec-value {
+    color: var(--text);
+    font-weight: 600;
+    text-align: right;
+}
+
+/* Stream Section */
+.stream {
+    padding: 6rem 0;
+    background: var(--darker);
+}
+
+.stream-wrapper {
+    margin-top: 3rem;
+    border-radius: 16px;
+    overflow: hidden;
+    border: 2px solid rgba(0, 255, 136, 0.2);
+    background: var(--card-bg);
+    aspect-ratio: 16/9;
+    position: relative;
+}
+
+.stream-wrapper iframe {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.kick-cta-wrapper {
+    text-align: center;
+}
+
+.kick-cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-top: 2rem;
+    padding: 1rem 2rem;
+    background: linear-gradient(135deg, #53fc18 0%, #00ff88 100%);
+    color: var(--dark);
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 20px rgba(83, 252, 24, 0.3);
+}
+
+.kick-cta:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 30px rgba(83, 252, 24, 0.5);
+}
+
+.kick-cta svg {
+    width: 24px;
+    height: 24px;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
     .stats {
@@ -378,7 +566,32 @@ footer p {
         align-items: stretch;
     }
     
-    .settings-grid {
+    .settings-columns {
         grid-template-columns: 1fr;
+    }
+
+    .crosshair-details {
+        flex-direction: column;
+    }
+
+    .crosshair-preview {
+        flex: 0 0 auto;
+        min-height: 100px;
+    }
+
+    .crosshair-specs .setting-row {
+        padding: 0.5rem 0;
+    }
+
+    .viewmodel-settings {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .specs-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .stream-wrapper {
+        height: 300px;
     }
 }
