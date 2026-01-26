@@ -2,6 +2,14 @@
 
 Modern CS2 pro player landing page featuring settings and social links.
 
+## 📸 Screenshots
+
+### Hero Section
+![Hero Section](screenshots/hero-section.jpg)
+
+### Full Page
+![Full Page](screenshots/full-page.jpg)
+
 ## 🎮 Features
 
 - **Glitch Effect Hero Section** - Eye-catching animated title
