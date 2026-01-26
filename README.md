@@ -5,10 +5,10 @@ Modern CS2 pro player landing page featuring settings and social links.
 ## 📸 Screenshots
 
 ### Hero Section
-![Hero Section](screenshots/hero-section.jpg)
+![Hero Section](screenshots/hero-section-new.jpg)
 
 ### Full Page
-![Full Page](screenshots/full-page.jpg)
+![Full Page](screenshots/full-page-new.jpg)
 
 ## 🎮 Features
 
