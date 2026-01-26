@@ -1,21 +1,19 @@
 // Copy to clipboard function
-function copyToClipboard(text) {
+function copyToClipboard(text, button) {
     navigator.clipboard.writeText(text).then(() => {
-        // Visual feedback
-        const btn = event.target;
-        const originalText = btn.textContent;
-        btn.textContent = '✓';
-        btn.style.background = 'var(--primary)';
-        btn.style.color = 'var(--dark)';
+        const originalText = button.textContent;
+        button.textContent = '✓ Kopyalandı';
+        button.style.background = 'var(--primary)';
+        button.style.color = 'var(--dark)';
         
         setTimeout(() => {
-            btn.textContent = originalText;
-            btn.style.background = 'transparent';
-            btn.style.color = 'var(--primary)';
+            button.textContent = originalText;
+            button.style.background = 'transparent';
+            button.style.color = 'var(--primary)';
         }, 2000);
     }).catch(err => {
         console.error('Failed to copy:', err);
-        alert('Kopyalanamadı!');
+        alert('Kopyalanamadı! Tarayıcı clipboard erişimine izin vermiyor olabilir.');
     });
 }
 
